@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "browserify-fs": "^1.0.0",
-    "mjml4-in-browser": "^1.1.2",
+    "mjml": "^4.5.1",
     "mobx": "^5.15.4",
     "mobx-react": "^6.1.8",
     "next": "^9.2.2",
@@ -17,7 +16,6 @@
     "@types/node": "^13.7.6",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "mjml": "^4.5.1",
     "typescript": "^3.8.2"
   }
 }

@@ -1,8 +1,17 @@
+const path = require("path")
+
 module.exports = {
-  webpack(config) {
-    ;(config.resolve || (config.resolve = {})).alias ||
-      (config.resolve.alias = {})
-    config.resolve.alias.mjml = "mjml4-in-browser"
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      ;(config.resolve || (config.resolve = {})).alias ||
+        (config.resolve.alias = {})
+
+      config.resolve.alias.fs = path.resolve(__dirname, "src/mocks/fs.js")
+      config.resolve.alias["uglify-js"] = path.resolve(
+        __dirname,
+        "src/mocks/uglify-js.js"
+      )
+    }
 
     return config
   }
