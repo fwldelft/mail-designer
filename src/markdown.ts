@@ -31,7 +31,6 @@ export const transformMarkdown = (md: string): string => {
     .filter(collection => collection.length !== 0)
     .map(collection => {
       if (collection.length === 1 && collection[0].type === "image") {
-        console.log(collection)
         return `<mj-image src="${collection[0].url}" alt="${collection[0].alt}" />`
       } else {
         return `<mj-text>${stringifier.stringify(
