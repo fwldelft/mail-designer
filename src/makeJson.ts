@@ -89,7 +89,7 @@ export const makeData = (data: TemplateData): any => `
             <mj-social-element
               name="instagram"
               alt="Falling Walls Lab Delft on Instagram"
-              href="https://www.instagram.com/fwldelft/"
+              href="https://www.instagram.com/falling_walls_lab_delft/"
             />
             <mj-social-element
               name="linkedin-noshare"
